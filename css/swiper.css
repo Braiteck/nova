@@ -95,6 +95,39 @@
 }
 
 
+.other_services .swiper-button-next,
+.other_services .swiper-button-prev
+{
+    top: 0;
+    bottom: 0;
+
+    margin: auto;
+}
+
+.other_services .swiper-button-prev
+{
+    right: auto;
+    left: -52px;
+}
+
+.other_services .swiper-button-next
+{
+    right: -52px;
+}
+
+.other_services .swiper-button-next .icon,
+.other_services .swiper-button-prev .icon
+{
+    fill: #f2d07d;
+}
+
+.other_services .swiper-button-next:hover .icon,
+.other_services .swiper-button-prev:hover .icon
+{
+    fill: #eeebe4;
+}
+
+
 .materials .swiper-button-next,
 .materials .swiper-button-prev
 {

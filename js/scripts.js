@@ -334,6 +334,37 @@ $(() => {
 			$item.addClass('active').find('.data').slideDown(300)
 		}
 	})
+
+
+	// Похожие услуги
+	if ($('.other_services .swiper-container').length) {
+		new Swiper('.other_services .swiper-container', {
+			loop: true,
+			speed: 500,
+			spaceBetween: 13,
+			watchSlidesVisibility: true,
+			slideActiveClass: 'active',
+			slideVisibleClass: 'visible',
+			navigation: {
+				nextEl: '.swiper-button-next',
+				prevEl: '.swiper-button-prev'
+			},
+			breakpoints: {
+				0: {
+					slidesPerView: 1
+				},
+				480: {
+					slidesPerView: 2
+				},
+				768: {
+					slidesPerView: 3
+				},
+				1024: {
+					slidesPerView: 4
+				}
+			}
+		})
+	}
 })
 
 

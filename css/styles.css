@@ -6305,6 +6305,107 @@ header .menu .sub_menu a.active
 
 
 /*--------------------
+    Other services
+--------------------*/
+.other_services
+{
+    padding-top: 75px;
+}
+
+
+.other_services .swiper-container
+{
+    overflow: visible !important;
+}
+
+.other_services .slide
+{
+    visibility: hidden;
+
+    transition: opacity .2s linear, visibility .2s linear;
+    pointer-events: none;
+
+    opacity: 0;
+}
+
+.other_services .slide.visible
+{
+    visibility: visible;
+
+    pointer-events: auto;
+
+    opacity: 1;
+}
+
+
+.other_services .service
+{
+    padding: 13px 20px 32px;
+
+    background: #303134;
+}
+
+
+.other_services .service .thumb
+{
+    display: flex;
+
+    height: 223px;
+    margin-bottom: 27px;
+
+    text-decoration: none;
+
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.other_services .service .thumb img
+{
+    display: block;
+
+    max-width: 100%;
+    max-height: 100%;
+}
+
+
+.other_services .service .name
+{
+    color: #f1cf82;
+    font-size: 18px;
+    line-height: 22px;
+}
+
+.other_services .service .name a
+{
+    color: currentColor;
+
+    display: inline-block;
+
+    transition: color .2s linear;
+    vertical-align: top;
+    text-decoration: none;
+}
+
+.other_services .service .thumb:hover .name a,
+.other_services .service .name a:hover
+{
+    color: #fff;
+}
+
+
+.other_services .service .desc
+{
+    color: #fff;
+    line-height: 17px;
+
+    margin-top: 5px;
+}
+
+
+
+/*--------------------
     Sub categories
 --------------------*/
 .sub_categories

@@ -909,6 +909,28 @@
 
 
 
+
+    /*--------------------
+        Other services
+    --------------------*/
+    .other_services .service
+    {
+        padding: 12px 12px 16px;
+    }
+
+    .other_services .service .thumb
+    {
+        height: 170px;
+        margin-bottom: 16px;
+    }
+
+    .other_services .service .name
+    {
+        font-size: 16px;
+    }
+
+
+
     /*--------------------
         Sub categories
     --------------------*/

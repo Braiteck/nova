@@ -951,6 +951,35 @@
 
 
 
+
+    /*--------------------
+        Other services
+    --------------------*/
+    .other_services
+    {
+        padding-top: 70px;
+    }
+
+
+    .other_services .swiper-button-prev
+    {
+        left: 0;
+    }
+
+    .other_services .swiper-button-next
+    {
+        right: 0;
+    }
+
+
+    .other_services .service .thumb
+    {
+        height: 176px;
+        margin-bottom: 20px;
+    }
+
+
+
     /*--------------------
         Sub categories
     --------------------*/
