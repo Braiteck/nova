@@ -1,0 +1,1121 @@
+@media print, (max-width: 1023px)
+{
+    /*-------------------
+        Global styles
+    -------------------*/
+    :root
+    {
+        --font_size: 14px;
+        --font_size_title: 38px;
+        --font_size_title_small: 30px;
+    }
+
+
+    html.custom_scroll ::-webkit-scrollbar
+    {
+        width: 5px;
+        height: 5px;
+    }
+
+
+    .portfolio .swiper-button-prev,
+    .articles .swiper-button-prev,
+    .services_list .swiper-button-prev
+    {
+        left: 20px;
+    }
+
+    .portfolio .swiper-button-next,
+    .articles .swiper-button-next,
+    .services_list .swiper-button-next
+    {
+        right: 20px;
+    }
+
+
+
+    /*---------------
+        Load More
+    ---------------*/
+    .load_more
+    {
+        margin-top: 40px;
+    }
+
+
+
+    /*----------------
+        Pagination
+    ----------------*/
+    .pagination a
+    {
+        font-size: 16px;
+        line-height: 46px;
+
+        width: 48px;
+        height: 48px;
+    }
+
+    .pagination .sep
+    {
+        width: 48px;
+        height: 48px;
+    }
+
+
+
+    /*------------
+        Header
+    ------------*/
+    .mob_header
+    {
+        display: block;
+    }
+
+
+    header
+    {
+        position: fixed;
+        z-index: 101;
+        top: 0;
+        left: 0;
+
+        width: 310px;
+        height: 100%;
+        min-height: -moz-available;
+        min-height: -webkit-fill-available;
+        min-height:         fill-available;
+        margin: 0;
+
+        transition: transform .3s linear;
+        transform: translateX(-100%);
+
+        background: #303134;
+    }
+
+    header.show
+    {
+        transform: translateX(0);
+    }
+
+
+    header .mob_scroll
+    {
+        display: flex;
+        overflow: auto;
+
+        height: 100%;
+        min-height: -moz-available;
+        min-height: -webkit-fill-available;
+        min-height:         fill-available;
+        padding: 20px 0;
+
+        justify-content: flex-start;
+        align-items: flex-start;
+        align-content: flex-start;
+        flex-wrap: wrap;
+    }
+
+    header .mob_scroll > *
+    {
+        width: 100%;
+        padding: 0;
+    }
+
+
+    header .info
+    {
+        order: 2;
+    }
+
+
+    header .logo,
+    header .search
+    {
+        display: none;
+    }
+
+
+    header .phone,
+    header .email,
+    header .whatsapp
+    {
+        font-size: 15px;
+    }
+
+    header .callback_btn
+    {
+        width: 100%;
+        margin-top: 20px;
+        margin-left: 0;
+    }
+
+    header .whatsapp
+    {
+        margin-top: 20px;
+    }
+
+
+    header .invite_btn
+    {
+        margin-top: 20px;
+        padding-left: 52px;
+    }
+
+
+
+    header .menu
+    {
+        margin-bottom: 25px;
+        padding-bottom: 25px;
+
+        border-bottom: 1px solid #000;
+    }
+
+    header .menu .item
+    {
+        width: 100%;
+    }
+
+    header .menu .item + .item
+    {
+        margin-top: 15px;
+    }
+
+    header .menu .item > a:before,
+    header .menu .item > a:after
+    {
+        display: none;
+    }
+
+    header .menu .item > a
+    {
+        padding: 0;
+
+        text-align: left;
+    }
+
+    header .menu .item > a br
+    {
+        display: none;
+    }
+
+
+    header .menu .item .sub_menu,
+    header .menu .item:hover .sub_menu
+    {
+        position: relative;
+        top: 0;
+        left: 0;
+
+        display: none;
+        visibility: visible;
+
+        width: 100%;
+        margin: 5px 0 0;
+
+        pointer-events: auto;
+
+        opacity: 1;
+    }
+
+    header .menu .sub_menu:before
+    {
+        display: none;
+    }
+
+    header .menu .item > a.touch_link + .sub_menu.show
+    {
+        top: 0;
+
+        display: block;
+        visibility: visible;
+    }
+
+    header .menu .sub_menu a
+    {
+        padding: 12px 0;
+
+        text-align-last: left;
+    }
+
+
+
+    .mob_header .search .mini_modal
+    {
+        width: 560px;
+    }
+
+    .mob_header .search form .input
+    {
+        height: 45px;
+        padding-right: 100px;
+    }
+
+    .mob_header .search form .submit_btn
+    {
+        right: 49px;
+
+        width: 45px;
+        height: 45px;
+    }
+
+    .mob_header .search form .submit_btn .icon
+    {
+        width: 18px;
+        height: 18px;
+    }
+
+    .mob_header .search form .close
+    {
+        width: 45px;
+        height: 45px;
+    }
+
+    .mob_header .search form .close:before,
+    .mob_header .search form .close:after
+    {
+        width: 18px;
+    }
+
+    .mob_header .search form .sep
+    {
+        right: 45px;
+
+        height: 25px;
+    }
+
+
+
+    /*-------------
+        Sidebar
+    -------------*/
+
+
+
+    /*---------------
+        Page head
+    ---------------*/
+    .page_head
+    {
+        margin-bottom: 40px;
+        padding-top: 20px;
+    }
+
+
+    .page_title
+    {
+        font-size: 38px;
+        line-height: 48px;
+
+        padding-bottom: 27px;
+    }
+
+
+    .page_desc
+    {
+        margin-top: 30px;
+    }
+
+
+
+    /*----------------
+        Block head
+    ----------------*/
+    .block_head
+    {
+        margin-bottom: 40px;
+    }
+
+    .block_head.min_margin
+    {
+        margin-bottom: 25px;
+    }
+
+    .block_head .title.small
+    {
+        line-height: 40px;
+    }
+
+
+
+    /*------------------
+        Form elements
+    ------------------*/
+
+
+
+    /*----------------
+        Typography
+    ----------------*/
+    .text_block > *,
+    .text_block .cols .col > *
+    {
+        margin-bottom: 20px;
+    }
+
+
+    .text_block h1
+    {
+        font-size: 40px;
+        line-height: 50px;
+
+        margin-bottom: 25px;
+    }
+
+    .text_block h2
+    {
+        font-size: 30px;
+        line-height: 40px;
+
+        margin-bottom: 25px;
+    }
+
+    .text_block h3
+    {
+        font-size: 25px;
+        line-height: 35px;
+
+        margin-bottom: 15px;
+    }
+
+    .text_block h4
+    {
+        font-size: 21px;
+        line-height: 31px;
+    }
+
+    .text_block h5
+    {
+        font-size: 18px;
+        line-height: 26px;
+    }
+
+
+    .text_block * + h2,
+    .text_block * + h3,
+    .text_block * + h4,
+    .text_block * + h5,
+    .text_block * + h6
+    {
+        margin-top: 40px;
+    }
+
+
+    .text_block .img.left
+    {
+        margin-right: 25px;
+    }
+
+    .text_block .img.right
+    {
+        margin-left: 25px;
+    }
+
+
+    .text_block .cols .col
+    {
+        width: calc(50% - 20px);
+    }
+
+
+    .text_block blockquote,
+    .text_block q
+    {
+        font-size: 18px;
+        line-height: 26px;
+
+        margin: 40px 0;
+        padding: 40px 0 40px 45px;
+    }
+
+
+    .text_block .sep
+    {
+        margin: 40px 0;
+    }
+
+
+    .text_block .links
+    {
+        margin-top: 40px;
+        margin-bottom: 40px;
+        margin-left: -25px;
+    }
+
+    .text_block .links .col
+    {
+        width: calc(33.333% - 25px);
+        margin-left: 25px;
+    }
+
+
+    .text_block table th
+    {
+        line-height: 16px;
+    }
+
+
+
+    /*-------------------
+        First section
+    -------------------*/
+    .first_section .info .title
+    {
+        font-size: 40px;
+        line-height: 50px;
+    }
+
+    .first_section .info .desc
+    {
+        font-size: 20px;
+        line-height: 28px;
+    }
+
+    .first_section .info .link
+    {
+        margin-top: 240px;
+    }
+
+
+    .first_section .bg
+    {
+        width: 768px;
+        height: 580px;
+    }
+
+
+
+    /*--------------
+        Services
+    --------------*/
+    .services
+    {
+        padding: 60px 0;
+    }
+
+
+    .services .service .info
+    {
+        width: 100%;
+    }
+
+    .services .service .name
+    {
+        font-size: 24px;
+        line-height: 32px;
+    }
+
+
+    .services .service .image
+    {
+        width: 100%;
+        margin-right: 0;
+    }
+
+
+
+    /*-------------------
+        Promo banners
+    -------------------*/
+    .promo_banners .row
+    {
+        margin-bottom: -20px;
+        margin-left: -20px;
+    }
+
+    .promo_banners .row > *
+    {
+        width: calc(50% - 20px);
+        margin-bottom: 20px;
+        margin-left: 20px;
+    }
+
+    .promo_banners .row > *.big
+    {
+        width: calc(100% - 20px);
+    }
+
+
+    .promo_banners .banner
+    {
+        font-size: 16px;
+        line-height: 22px;
+    }
+
+    .promo_banners .banner.big
+    {
+        font-size: 22px;
+        line-height: 30px;
+    }
+
+
+
+    /*------------
+        Prices
+    ------------*/
+    .prices .block_head
+    {
+        margin-bottom: 30px;
+    }
+
+
+    .prices .row
+    {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .prices .row > *
+    {
+        width: calc(25% + 1px);
+    }
+
+
+    .prices .item .price span
+    {
+        font-size: 20px;
+    }
+
+
+
+    /*---------------
+        Portfolio
+    ---------------*/
+    .portfolio
+    {
+        padding: 70px 0;
+    }
+
+
+    .portfolio .category
+    {
+        font-size: 14px;
+        line-height: 22px;
+    }
+
+    .portfolio .categories > *
+    {
+        width: calc(20% - 20px);
+    }
+
+
+    .portfolio .row
+    {
+        margin-bottom: -40px;
+        margin-left: -30px;
+    }
+
+    .portfolio .row > *
+    {
+        width: calc(50% - 30px);
+        margin-bottom: 40px;
+        margin-left: 30px;
+    }
+
+    .portfolio .row .item .before_after > *
+    {
+        width: calc(50% - 5px);
+        padding: 5px;
+    }
+
+
+
+    /*----------------
+        Advantages
+    ----------------*/
+    .advantages
+    {
+        padding: 60px 0;
+    }
+
+
+    .advantages .row > *
+    {
+        width: calc(33.333% - 30px);
+    }
+
+
+    .advantages .item br
+    {
+        display: none;
+    }
+
+
+
+    /*-----------------
+        How we work
+    -----------------*/
+    .how_we_work
+    {
+        padding: 70px 0 50px;
+    }
+
+
+    .how_we_work .schema .item
+    {
+        font-size: 14px;
+        line-height: 22px;
+    }
+
+    .how_we_work .schema .item .number
+    {
+        font-size: 25px;
+        line-height: 60px;
+
+        width: 65px;
+        height: 65px;
+        margin-bottom: 15px;
+    }
+
+    .how_we_work .schema .item .number:before
+    {
+        width: 95px;
+        height: 95px;
+    }
+
+    .how_we_work .schema .item br
+    {
+        display: none;
+    }
+
+
+
+    /*------------
+        Brands
+    ------------*/
+    .brands:after
+    {
+        width: calc(100% * .33333);
+    }
+
+
+    .brands .invite_btn
+    {
+        width: calc(33.333% + 8px);
+    }
+
+
+    .brands .slider_wrap .title
+    {
+        line-height: 27px;
+
+        width: calc(100% * .33333);
+    }
+
+
+
+    /*------------------
+        Action block
+    ------------------*/
+    .action_block
+    {
+        padding-top: 80px;
+    }
+
+
+    .action_block .data
+    {
+        padding: 50px;
+
+        border: 1px solid #303134;
+        outline: 1px solid #303134;
+        outline-offset: -10px;
+        background: none;
+    }
+
+    .action_block .data:before
+    {
+        top: 12px;
+        left: 12px;
+
+        width: calc(100% - 24px);
+        height: calc(100% - 24px);
+    }
+
+
+    .action_block .title,
+    .action_block .phone,
+    .action_block .or
+    {
+        font-size: 26px;
+        line-height: 36px;
+    }
+
+
+
+    /*-------------------
+        Services list
+    -------------------*/
+    .services_list
+    {
+        padding-top: 60px;
+    }
+
+    .services_list .service
+    {
+        font-size: 15px;
+        line-height: 21px;
+    }
+
+
+    .services_list .all_link
+    {
+        width: 33.333%;
+        height: 90px;
+    }
+
+
+
+    /*---------------
+        Materials
+    ---------------*/
+    .materials
+    {
+        padding: 60px 0 80px;
+    }
+
+
+    .materials .row
+    {
+        margin-bottom: -20px;
+        margin-left: -20px;
+    }
+
+    .materials .row > *
+    {
+        width: calc(33.333% - 20px);
+        margin-bottom: 20px;
+        margin-left: 20px;
+    }
+
+
+    .materials .material .name
+    {
+        font-size: 15px;
+        line-height: 23px;
+
+        padding: 10px 20px 10px 30px;
+    }
+
+
+
+    .materials .slider_wrap
+    {
+        width: calc(75% - 20px);
+        margin-bottom: 30px;
+    }
+
+
+    .materials .info
+    {
+        width: 100%;
+    }
+
+
+
+    /*-----------
+        About
+    -----------*/
+    .about
+    {
+        padding: 60px 0 120px;
+    }
+
+    .about:after
+    {
+        bottom: 53px;
+    }
+
+
+    .about .row .title
+    {
+        font-size: 20px;
+        line-height: 30px;
+
+        width: calc(50% - 15px);
+    }
+
+    .about .text_block
+    {
+        width: calc(50% - 15px);
+    }
+
+
+
+    /*--------------
+        Articles
+    --------------*/
+    .articles
+    {
+        padding-top: 60px;
+    }
+
+
+    .articles .all_link
+    {
+        height: 80px;
+    }
+
+
+
+    /*---------------------
+        Material colors
+    ---------------------*/
+    .material_colors .limit
+    {
+        margin-top: -25px;
+    }
+
+
+    .material_colors .row
+    {
+        margin-bottom: -20px;
+        margin-left: -20px;
+    }
+
+    .material_colors .row > *
+    {
+        width: calc(33.333% - 20px);
+        margin-bottom: 20px;
+        margin-left: 20px;
+    }
+
+
+    .material_colors .color .name
+    {
+        font-size: 15px;
+        line-height: 23px;
+
+        padding: 10px 20px 10px 30px;
+    }
+
+    .material_colors .color .zoom
+    {
+        display: none;
+    }
+
+
+
+    /*----------
+        Calc
+    ----------*/
+    .calc
+    {
+        margin-bottom: 60px;
+    }
+
+
+    .calc .step:before
+    {
+        font-size: 30px;
+        line-height: 40px;
+    }
+
+    .calc .step:after
+    {
+        top: 20px;
+
+        width: 67px;
+    }
+
+
+
+    .calc .types
+    {
+        justify-content: center;
+    }
+
+    .calc .types > *
+    {
+        width: calc(20% - 10px);
+    }
+
+
+
+    .calc .sizes
+    {
+        margin-bottom: -20px;
+        margin-left: -20px;
+
+        justify-content: center;
+    }
+
+    .calc .sizes > *
+    {
+        width: calc(33.333% - 20px);
+        margin-bottom: 20px;
+        margin-left: 20px;
+    }
+
+
+
+    .calc .materials
+    {
+        margin-bottom: -20px;
+        margin-left: -20px;
+
+        justify-content: center;
+    }
+
+    .calc .materials > *
+    {
+        width: calc(33.333% - 20px);
+        margin-bottom: 20px;
+        margin-left: 20px;
+    }
+
+
+
+    .calc .details
+    {
+        margin-bottom: -20px;
+        margin-left: -20px;
+
+        justify-content: center;
+    }
+
+    .calc .details > *
+    {
+        width: calc(33.333% - 20px);
+        margin-bottom: 20px;
+        margin-left: 20px;
+    }
+
+    .calc .details label .name
+    {
+        width: calc(100% - 98px);
+    }
+
+
+
+    .calc .tariffs
+    {
+        margin-bottom: -20px;
+        margin-left: -20px;
+    }
+
+    .calc .tariffs > *
+    {
+        width: calc(33.333% - 20px);
+        margin-bottom: 20px;
+        margin-left: 20px;
+    }
+
+    .calc .tariffs .tariff .name
+    {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .calc .tariffs .tariff .features
+    {
+        font-size: 13px;
+        line-height: 21px;
+    }
+
+    .calc .tariffs .tariff .price
+    {
+        font-size: 15px;
+        line-height: 21px;
+
+        margin-top: 30px;
+    }
+
+    .calc .tariffs .tariff .price span
+    {
+        font-size: 25px;
+    }
+
+
+
+    .calc .warning .title
+    {
+        font-size: 24px;
+        line-height: 30px;
+    }
+
+    .calc .warning .desc
+    {
+        font-size: 14px;
+        line-height: 22px;
+    }
+
+
+
+    /*-------------------
+        Delivery info
+    -------------------*/
+    .delivery_info .cont
+    {
+        min-height: 0;
+    }
+
+    .delivery_info .title
+    {
+        font-size: 24px;
+        line-height: 30px;
+
+        margin-bottom: 25px;
+    }
+
+
+
+    /*------------
+        Footer
+    ------------*/
+    footer.margin_top
+    {
+        margin-top: 60px;
+    }
+
+
+    footer .col_left
+    {
+        display: none;
+    }
+
+    footer .col_right
+    {
+        width: calc(100% - 175px);
+    }
+
+
+    footer .logo
+    {
+        width: 112px;
+        height: 112px;
+    }
+
+    footer .logo img
+    {
+        top: -12px;
+        left: -12px;
+
+        width: auto;
+        height: auto;
+    }
+
+
+    footer .location
+    {
+        margin-bottom: 30px;
+    }
+
+
+    footer .socials,
+    footer .col_right .links
+    {
+        margin-top: 30px;
+    }
+
+
+
+    /*-----------
+        PopUp
+    -----------*/
+    .fancybox-slide--html
+    {
+        padding: 30px;
+    }
+}

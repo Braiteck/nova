@@ -1,0 +1,801 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+		<!-- Адаптирование страницы для мобильных устройств -->
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+		<!-- Запрет распознования номера телефона -->
+		<meta name="format-detection" content="telephone=no">
+		<meta name="SKYPE_TOOLBAR" content ="SKYPE_TOOLBAR_PARSER_COMPATIBLE">
+
+		<!-- Заголовок страницы -->
+		<title>Заголовок страницы</title>
+
+		<!-- Данное значение часто используют(использовали) поисковые системы -->
+		<meta name="description" content="">
+		<meta name="keywords" content="">
+
+		<!-- Традиционная иконка сайта, размер 16x16, прозрачность поддерживается. Рекомендуемый формат: .ico или .png -->
+		<link rel="shortcut icon" href="favicon.ico">
+
+		<!-- Изменение цвета панели моб. браузера -->
+		<meta name="msapplication-TileColor" content="#f2d07d">
+		<meta name="theme-color" content="#f2d07d">
+
+		<!-- Подключение файлов стилей -->
+		<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+		<link rel="stylesheet" href="css/swiper.css">
+		<link rel="stylesheet" href="css/fancybox.css">
+		<link rel="stylesheet" href="css/styles.css">
+
+		<link rel="stylesheet" href="css/response_1279.css" media="print, (max-width: 1279px)">
+		<link rel="stylesheet" href="css/response_1023.css" media="print, (max-width: 1023px)">
+		<link rel="stylesheet" href="css/response_767.css" media="print, (max-width: 767px)">
+		<link rel="stylesheet" href="css/response_479.css" media="(max-width: 479px)">
+	</head>
+
+	<body>
+		<div class="wrap">
+			<div class="main">
+				<header>
+					<button class="close"></button>
+
+					<div class="mob_scroll">
+						<div class="info">
+							<div class="cont row">
+								<a href="/" class="logo">
+									<img src="images/logo.svg" alt="">
+								</a>
+
+								<div class="contacts">
+									<div>
+										<div class="phone">
+											<svg class="icon"><use xlink:href="images/sprite.svg#ic_phone"></use></svg>
+											<a href="tel:+74957661572">+7 495 766-15-72</a>
+										</div>
+
+										<div class="email">
+											<svg class="icon"><use xlink:href="images/sprite.svg#ic_email"></use></svg>
+											<a href="mailto:antik-i@yandex.ru">antik-i@yandex.ru</a>
+										</div>
+									</div>
+
+									<button class="callback_btn modal_link" data-content="#callback_modal">ПЕРЕЗВОНИТЕ МНЕ</button>
+								</div>
+
+								<div class="whatsapp">
+									<svg class="icon"><use xlink:href="images/sprite.svg#ic_whatsapp"></use></svg>
+									<div><a href="#">+7 905 532-35-63</a></div>
+									<div><a href="#">+7 905 532-35-63</a></div>
+								</div>
+
+								<div class="location">
+									<svg class="icon"><use xlink:href="images/sprite.svg#ic_location"></use></svg>
+									<span>Москва, ул. 1-я Бухвостова дом 12/11,<br> м. Преображенская площадь</span>
+								</div>
+
+								<button class="invite_btn modal_link" data-content="#invite_modal">
+									<svg class="icon"><use xlink:href="images/sprite.svg#ic_measuring"></use></svg>
+									<span>ПРИГЛАСИТЬ<br> ДИЗАЙНЕРА</span>
+								</button>
+
+								<div class="search modal_cont">
+									<button class="btn mini_modal_btn" data-modal-id="#search_modal">
+										<svg class="icon"><use xlink:href="images/sprite.svg#ic_search"></use></svg>
+									</button>
+
+									<div class="mini_modal" id="search_modal">
+										<form action="">
+											<input type="text" name="" value="" class="input" placeholder="Поиск">
+
+											<button type="submit" class="submit_btn">
+												<svg class="icon"><use xlink:href="images/sprite.svg#ic_search"></use></svg>
+											</button>
+
+											<div class="sep"></div>
+
+											<button type="button" class="close"></button>
+										</form>
+									</div>
+								</div>
+							</div>
+						</div>
+
+
+						<div class="bottom">
+							<div class="cont">
+								<nav class="menu row">
+									<div class="item">
+										<a href="/">ПЕРЕТЯЖКА МЯГКОЙ<br> МЕБЕЛИ</a>
+									</div>
+
+									<div class="item">
+										<a href="/">ПЕРЕТЯЖКА КОЖАНОЙ<br> МЕБЕЛИ</a>
+									</div>
+
+									<div class="item">
+										<a href="/" class="sub_link">ОБИВКА<br> И ПЕРЕТЯЖКА</a>
+
+										<div class="sub_menu">
+											<div><a href="/">Обивка и перетяжка стульев</a></div>
+											<div><a href="/">Обивка и перетяжка кресел</a></div>
+											<div><a href="/">Обивка и перетяжка диванов</a></div>
+											<div><a href="/">Обивка и перетяжка кроватей</a></div>
+											<div><a href="/">Обивка и перетяжка офисных кресел</a></div>
+										</div>
+									</div>
+
+									<div class="item">
+										<a href="/">ЗАМЕНА<br> НАПОЛНИТЕЛЯ</a>
+									</div>
+
+									<div class="item">
+										<a href="/">РЕСТАВРАЦИЯ<br> МЕБЕЛИ</a>
+									</div>
+
+									<div class="item">
+										<a href="/" class="active">МАТЕРИАЛЫ</a>
+									</div>
+
+									<div class="item">
+										<a href="/">КАЛЬКУЛЯТОР</a>
+									</div>
+
+									<div class="item">
+										<a href="/">ИНФОРМАЦИЯ</a>
+									</div>
+								</nav>
+							</div>
+						</div>
+					</div>
+				</header>
+
+
+				<section class="mob_header">
+					<div class="cont">
+						<a href="/" class="logo">
+							<img src="images/logo.svg" alt="">
+						</a>
+
+						<div class="contacts">
+							<div>
+								<div class="phone">
+									<svg class="icon"><use xlink:href="images/sprite.svg#ic_phone"></use></svg>
+									<a href="tel:+74957661572">+7 495 766-15-72</a>
+								</div>
+
+								<div class="email">
+									<svg class="icon"><use xlink:href="images/sprite.svg#ic_email"></use></svg>
+									<a href="mailto:antik-i@yandex.ru">antik-i@yandex.ru</a>
+								</div>
+							</div>
+
+							<button class="callback_btn modal_link" data-content="#callback_modal">ПЕРЕЗВОНИТЕ МНЕ</button>
+						</div>
+
+						<button class="invite_btn modal_link" data-content="#invite_modal">
+							<svg class="icon"><use xlink:href="images/sprite.svg#ic_measuring"></use></svg>
+							<span>ПРИГЛАСИТЬ<br> ДИЗАЙНЕРА</span>
+						</button>
+
+						<div class="search modal_cont">
+							<button class="btn mini_modal_btn" data-modal-id="#mob_search_modal">
+								<svg class="icon"><use xlink:href="images/sprite.svg#ic_search"></use></svg>
+							</button>
+
+							<div class="mini_modal" id="mob_search_modal">
+								<form action="">
+									<input type="text" name="" value="" class="input" placeholder="Поиск">
+
+									<button type="submit" class="submit_btn">
+										<svg class="icon"><use xlink:href="images/sprite.svg#ic_search"></use></svg>
+									</button>
+
+									<div class="sep"></div>
+
+									<button type="button" class="close"></button>
+								</form>
+							</div>
+						</div>
+
+						<button class="mob_menu_btn">
+							<span></span>
+						</button>
+					</div>
+				</section>
+
+
+				<section class="page_head">
+					<div class="cont">
+						<div class="page_title">Велюр</div>
+					</div>
+				</section>
+
+
+				<section class="material_colors">
+					<div class="cont">
+						<div class="block_head center">
+							<div class="title small">Большое количество оттенков на выбор</div>
+						</div>
+
+						<div class="limit">
+							<div class="name">Оттенков на странице</div>
+
+							<select name="">
+								<option value="20" selected>20</option>
+								<option value="40">40</option>
+								<option value="60">60</option>
+							</select>
+						</div>
+
+						<div class="row">
+							<a href="images/tmp/material_color1.jpg" class="color fancy_img" data-fancybox="material_colors">
+								<div class="thumb">
+									<img data-src="images/tmp/material_color1.jpg" alt="" class="lozad">
+								</div>
+
+								<div class="name">Ameli <small>#405</small></div>
+
+								<div class="zoom">
+									<svg class="icon"><use xlink:href="images/sprite.svg#ic_zoom"></use></svg>
+								</div>
+							</a>
+
+							<a href="images/tmp/material_color2.jpg" class="color fancy_img" data-fancybox="material_colors">
+								<div class="thumb">
+									<img data-src="images/tmp/material_color2.jpg" alt="" class="lozad">
+								</div>
+
+								<div class="name">Armando <small>#405</small></div>
+
+								<div class="zoom">
+									<svg class="icon"><use xlink:href="images/sprite.svg#ic_zoom"></use></svg>
+								</div>
+							</a>
+
+							<a href="images/tmp/material_color3.jpg" class="color fancy_img" data-fancybox="material_colors">
+								<div class="thumb">
+									<img data-src="images/tmp/material_color3.jpg" alt="" class="lozad">
+								</div>
+
+								<div class="name">Avatar <small>#405</small></div>
+
+								<div class="zoom">
+									<svg class="icon"><use xlink:href="images/sprite.svg#ic_zoom"></use></svg>
+								</div>
+							</a>
+
+							<a href="images/tmp/material_color4.jpg" class="color fancy_img" data-fancybox="material_colors">
+								<div class="thumb">
+									<img data-src="images/tmp/material_color4.jpg" alt="" class="lozad">
+								</div>
+
+								<div class="name">Blitz <small>#405</small></div>
+
+								<div class="zoom">
+									<svg class="icon"><use xlink:href="images/sprite.svg#ic_zoom"></use></svg>
+								</div>
+							</a>
+
+							<a href="images/tmp/material_color5.jpg" class="color fancy_img" data-fancybox="material_colors">
+								<div class="thumb">
+									<img data-src="images/tmp/material_color5.jpg" alt="" class="lozad">
+								</div>
+
+								<div class="name">Bruno <small>#405</small></div>
+
+								<div class="zoom">
+									<svg class="icon"><use xlink:href="images/sprite.svg#ic_zoom"></use></svg>
+								</div>
+							</a>
+
+							<a href="images/tmp/material_color6.jpg" class="color fancy_img" data-fancybox="material_colors">
+								<div class="thumb">
+									<img data-src="images/tmp/material_color6.jpg" alt="" class="lozad">
+								</div>
+
+								<div class="name">Camelot <small>#405</small></div>
+
+								<div class="zoom">
+									<svg class="icon"><use xlink:href="images/sprite.svg#ic_zoom"></use></svg>
+								</div>
+							</a>
+
+							<a href="images/tmp/material_color7.jpg" class="color fancy_img" data-fancybox="material_colors">
+								<div class="thumb">
+									<img data-src="images/tmp/material_color7.jpg" alt="" class="lozad">
+								</div>
+
+								<div class="name">Caramello <small>#405</small></div>
+
+								<div class="zoom">
+									<svg class="icon"><use xlink:href="images/sprite.svg#ic_zoom"></use></svg>
+								</div>
+							</a>
+
+							<a href="images/tmp/material_color8.jpg" class="color fancy_img" data-fancybox="material_colors">
+								<div class="thumb">
+									<img data-src="images/tmp/material_color8.jpg" alt="" class="lozad">
+								</div>
+
+								<div class="name">Estel <small>#405</small></div>
+
+								<div class="zoom">
+									<svg class="icon"><use xlink:href="images/sprite.svg#ic_zoom"></use></svg>
+								</div>
+							</a>
+
+							<a href="images/tmp/material_color9.jpg" class="color fancy_img" data-fancybox="material_colors">
+								<div class="thumb">
+									<img data-src="images/tmp/material_color9.jpg" alt="" class="lozad">
+								</div>
+
+								<div class="name">Gala <small>#405</small></div>
+
+								<div class="zoom">
+									<svg class="icon"><use xlink:href="images/sprite.svg#ic_zoom"></use></svg>
+								</div>
+							</a>
+
+							<a href="images/tmp/material_color10.jpg" class="color fancy_img" data-fancybox="material_colors">
+								<div class="thumb">
+									<img data-src="images/tmp/material_color10.jpg" alt="" class="lozad">
+								</div>
+
+								<div class="name">Fluffy <small>#405</small></div>
+
+								<div class="zoom">
+									<svg class="icon"><use xlink:href="images/sprite.svg#ic_zoom"></use></svg>
+								</div>
+							</a>
+
+							<a href="images/tmp/material_color11.jpg" class="color fancy_img" data-fancybox="material_colors">
+								<div class="thumb">
+									<img data-src="images/tmp/material_color11.jpg" alt="" class="lozad">
+								</div>
+
+								<div class="name">Fly <small>#405</small></div>
+
+								<div class="zoom">
+									<svg class="icon"><use xlink:href="images/sprite.svg#ic_zoom"></use></svg>
+								</div>
+							</a>
+
+							<a href="images/tmp/material_color12.jpg" class="color fancy_img" data-fancybox="material_colors">
+								<div class="thumb">
+									<img data-src="images/tmp/material_color12.jpg" alt="" class="lozad">
+								</div>
+
+								<div class="name">Gimalai <small>#405</small></div>
+
+								<div class="zoom">
+									<svg class="icon"><use xlink:href="images/sprite.svg#ic_zoom"></use></svg>
+								</div>
+							</a>
+						</div>
+
+						<div class="pagination center">
+							<a href="/" class="prev">
+								<svg class="icon"><use xlink:href="images/sprite.svg#ic_arrow"></use></svg>
+							</a>
+
+							<a class="active">1</a>
+							<a href="/">2</a>
+							<a href="/">3</a>
+							<a href="/">4</a>
+							<div class="sep">
+								<img src="images/ic_pag_sep.svg" alt="">
+							</div>
+							<a href="/">12</a>
+
+							<a href="/" class="next">
+								<svg class="icon"><use xlink:href="images/sprite.svg#ic_arrow"></use></svg>
+							</a>
+						</div>
+					</div>
+				</section>
+
+
+				<div class="wave_line"></div>
+
+
+				<section>
+					<div class="cont">
+						<div class="text_block">
+							<h1>Велюр H1</h1>
+
+							<p>Правильно подобранный <a href="/">обивочный материал</a> и качественно выполненная работа делает мебель еще более привлекательной, и придает презентабельный вид.<br> Мы умеем работать как с традиционными, так и с современными материалами: от натуральной кожи и экокожи, кожзаменителя до огромной группы мебельного текстиля: велюр, бархат, флок и других. Сотрудничество с надежными и проверенными поставщиками обеспечивает наличие лучших по качеству материалов.</p>
+
+							<a href="images/tmp/text_img.jpg" class="img fancy_img left">
+								<img src="images/tmp/text_img.jpg" alt="">
+							</a>
+
+							<p><b>Велюр — чистошерстяная ворсованная ткань из пряжи суконного прядения, имеющая ворс несколько более длинный, чем у бархата. По способу производства этот велюр называется разрезной. Одна из самых ценных велюровых тканей — драп-велюр, для изготовления которого используют лучшие сорта мериносовой шерсти.</b></p>
+
+							<p>По способу оформления ворса велюр может быть гладким, фасонным, тиснёным и других видов. Ворс при этом располагается по-разному: вертикально по всей ткани, на отдельных участках приглажен в одну сторону, с тиснением, с расчёсом по трафарету или укладкой в виде разнообразных рисунков.</p>
+
+							<p>Правильно подобранный обивочный материал и качественно выполненная работа делает мебель еще более привлекательной, и придает презентабельный вид. Мы умеем работать как с традиционными, так и с современными материалами: от натуральной кожи и экокожи, кожзаменителя до огромной группы мебельного текстиля: велюр, бархат, флок и других. Сотрудничество с надежными и проверенными поставщиками обеспечивает наличие лучших по качеству материалов.</p>
+							<div class="clear"></div>
+
+							<a href="images/tmp/text_img2.jpg" class="img fancy_img right">
+								<img src="images/tmp/text_img2.jpg" alt="">
+							</a>
+
+							<p><b>В отличие от разрезного, петельчатый велюр — это трикотажное полотно, которое тянется и подходит для пошива одежды.</b></p>
+
+							<p>Велюр для обивки мягкой мебели сложных форм — это различные ворсовые ткани или трикотажные полотна, сочетающие натуральные хлопчатобумажные и шерстяные, а также химические волокна; бывают гладкокрашенные и набивные.</p>
+
+							<p>Мы умеем работать как с традиционными, так и с современными материалами: от натуральной кожи и экокожи, кожзаменителя до огромной группы мебельного текстиля: велюр, бархат, флок и других. Сотрудничество с надежными и проверенными поставщиками обеспечивает наличие лучших по качеству материалов.</p>
+							<div class="clear"></div>
+
+							<h2>Мы предлагаем H2</h2>
+
+							<p><b>Наш основной профиль — это обивка и перетяжка мягкой мебели в Москве и Московской области, которая сочетает в себе следующие виды работ:</b></p>
+
+							<div class="cols">
+								<div class="col">
+									<ul>
+										<li><b>Перетяжка мебели.</b> Используем современные материалы, придавая мебели лаконичный, законченный вид. Подбираем любые виды материалов под ваши предпочтения;</li>
+
+										<li><b>Лакокрасочные работы.</b> Все работы проводят специалисты с большим опытом работы. В нашей мастерской применяется несколько техник, позволяющих получить качественное лакокрасочное покрытие;</li>
+
+										<li><b>Изготовление мебели.</b> Мы изготавливаем мебель с нуля, по вашим описаниям, чертежам или фотографиям. В работе используем массив бука, дуба, мдф с натуральным шпоном или чистый мдф, если мебель изготавливается под отделку эмалью.</li>
+									</ul>
+								</div>
+
+								<div class="col">
+									<ol>
+										<li><b>Перетяжка мебели.</b> Используем современные материалы, придавая мебели лаконичный, законченный вид. Подбираем любые виды материалов под ваши предпочтения;</li>
+
+										<li><b>Лакокрасочные работы.</b> Все работы проводят специалисты с большим опытом работы. В нашей мастерской применяется несколько техник, позволяющих получить качественное лакокрасочное покрытие;</li>
+
+										<li><b>Изготовление мебели.</b> Мы изготавливаем мебель с нуля, по вашим описаниям, чертежам или фотографиям. В работе используем массив бука, дуба, мдф с натуральным шпоном или чистый мдф, если мебель изготавливается под отделку эмалью.</li>
+									</ol>
+								</div>
+							</div>
+
+							<h3>История возникновения велюра H3</h3>
+
+							<p>У названия французское происхождение от слова «Velours», что означает бархат. Первые образцы велюра, появились на Востоке. Богатую и изысканную ткань получали из натуральных, шелковых нитей. Из шелка была основа и ворс. Для украшения в полотно вплетали нити золота и серебра, а изделия обшивали богатой тесьмой. Он был в гардеробе вельмож и королей, в декоре дворцов и замков.</p>
+
+							<blockquote>
+								<div>Понятие велюр объединяет целый ряд ворсовых материалов. Имеет плотную структуру и несколько видов основания. Ценится потребителями за изысканный и богатый облик и практичность. Одним словом, велюр — это ткань с ворсистой поверхностью, бархатистая и мягкая.</div>
+							</blockquote>
+
+							<p>В состав велюра входят натуральные и синтетические волокна: шерсть, хлопок, шелк, полиэстер, вискоза, лайкра, эластан. Синтетические нити дают прочность и долговечность ткани, а добавка стрейча повышает эластичность и способность тянуться.</p>
+
+							<div class="sep"></div>
+
+							<h4>Технология плетения для получения велюров H4</h4>
+
+							<p>Однополотенная предусматривает использование прутка, который вставляют под нити формируемого ворса. Таким образом, получаются петли. Когда они зафиксированы, то пруток извлекают. Если петли не разрезать, то получится петельный ворс. После разрезания петель получается разрезной ворс.</p>
+
+							<div class="hide">
+								<p>Однополотенная предусматривает использование прутка, который вставляют под нити формируемого ворса. Таким образом, получаются петли. Когда они зафиксированы, то пруток извлекают. Если петли не разрезать, то получится петельный ворс. После разрезания петель получается разрезной ворс.</p>
+							</div>
+
+							<button class="spoler_btn">
+								<svg class="icon"><use xlink:href="images/sprite.svg#ic_arrow"></use></svg>
+								<span>ПОКАЗАТЬ ЕЩЕ</span>
+								<span>Свернуть обратно</span>
+							</button>
+
+							<div class="sep"></div>
+
+							<h5>Виды велюра H5</h5>
+
+							<div class="table_wrap">
+								<table>
+									<thead>
+										<tr>
+											<th>ПО СОСТАВУ</th>
+											<th>ПО ПЛЕТЕНИЮ НИТЕЙ</th>
+											<th>ПО ОКРАСКЕ</th>
+											<th>ПО ВНЕШНЕМУ ВИДУ</th>
+										</tr>
+									</thead>
+
+									<tbody>
+										<tr>
+											<td>Хлопковый</td>
+											<td>Велюр на трикотаже</td>
+											<td>Гладкокрашенный</td>
+											<td>Гладкий</td>
+										</tr>
+
+										<tr>
+											<td>Шерстяной</td>
+											<td>Муаровый</td>
+											<td>Принтовой</td>
+											<td>Фасонный</td>
+										</tr>
+
+										<tr>
+											<td>Драп-велюр</td>
+											<td>Жаккардовый</td>
+											<td>Набивной</td>
+											<td>Креш</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+
+
+							<div class="links">
+								<div class="col">
+									<h6>Группа ссылок 1</h6>
+
+									<ul>
+										<li><a href="/">Перетяжка диванов</a></li>
+										<li><a href="/">Перетяжка кресел</a></li>
+										<li><a href="/">Перетяжка углового дивана</a></li>
+									</ul>
+								</div>
+
+								<div class="col">
+									<h6>Группа ссылок 2</h6>
+
+									<ul>
+										<li><a href="/">Перетяжка диванов</a></li>
+										<li><a href="/">Перетяжка кресел</a></li>
+										<li><a href="/">Перетяжка углового дивана</a></li>
+									</ul>
+								</div>
+
+								<div class="col">
+									<h6>Группа ссылок 3</h6>
+
+									<ul>
+										<li><a href="/">Перетяжка диванов</a></li>
+										<li><a href="/">Перетяжка кресел</a></li>
+										<li><a href="/">Перетяжка углового дивана</a></li>
+									</ul>
+								</div>
+							</div>
+
+							<div class="sep"></div>
+						</div>
+					</div>
+				</section>
+
+
+				<section class="action_block min_pad">
+					<div class="cont">
+						<div class="data">
+							<div class="title">Пригласить дизайнера бесплатно!</div>
+
+							<div class="phone">
+								<div class="icon">
+									<svg><use xlink:href="images/sprite.svg#ic_phone"></use></svg>
+								</div>
+								<a href="tel:+74957661572">+7 495 766-15-72</a>
+							</div>
+
+							<div class="or">или</div>
+
+							<div class="invite">
+								<div>Оставьте свою контактную информацию и менеджер позвонит в течение дня.<br> Сделает предварительную оценку по фото и договорится о выезде специалиста на место.<br> Выезд — бесплатно.</div>
+
+								<button class="btn modal_link" data-content="#invite_modal">
+									<svg class="icon"><use xlink:href="images/sprite.svg#ic_measuring"></use></svg>
+									<span>ПРИГЛАСИТЬ<br> ДИЗАЙНЕРА</span>
+								</button>
+							</div>
+						</div>
+					</div>
+				</section>
+			</div>
+
+
+			<footer class="margin_top">
+				<div class="info">
+					<div class="cont row">
+						<div class="col_left">
+							<div class="links">
+								<div class="title">УСЛУГИ</div>
+
+								<div class="list">
+									<div><a href="/">Перетяжка мягкой мебели</a></div>
+									<div><a href="/">Перетяжка кожаной мебели</a></div>
+									<div><a href="/">Обивка и перетяжка стульев</a></div>
+									<div><a href="/">Обивка и перетяжка кресел</a></div>
+									<div><a href="/">Обивка и перетяжка диванов</a></div>
+									<div><a href="/">Обивка и перетяжка кроватей</a></div>
+									<div><a href="/">Обивка и перетяжка офисных кресел</a></div>
+									<div><a href="/">Замена наполнителя</a></div>
+									<div><a href="/">Реставрация мебели</a></div>
+								</div>
+							</div>
+
+							<div class="links">
+								<div class="list">
+									<div><a href="/" class="big">МАТЕРИАЛЫ</a></div>
+									<div><a href="/" class="big">НАШИ РАБОТЫ</a></div>
+									<div><a href="/" class="big">КАЛЬКУЛЯТОР</a></div>
+									<div><a href="/" class="big">ИНФОРМАЦИЯ</a></div>
+									<div><a href="/">О фабрике</a></div>
+									<div><a href="/">Новости</a></div>
+								</div>
+							</div>
+						</div>
+
+						<div class="logo">
+							<img src="images/footer_logo.png" alt="">
+						</div>
+
+						<div class="col_right">
+							<div class="contacts">
+								<div class="location">
+									<svg class="icon"><use xlink:href="images/sprite.svg#ic_location"></use></svg>
+									<span>Москва, ул. 1-я Бухвостова дом 12/11, м. Преображенская площадь</span>
+								</div>
+
+								<div>
+									<div class="phone">
+										<svg class="icon"><use xlink:href="images/sprite.svg#ic_phone"></use></svg>
+										<a href="tel:+74957661572">+7 495 766-15-72</a>
+									</div>
+
+									<div class="email">
+										<svg class="icon"><use xlink:href="images/sprite.svg#ic_email"></use></svg>
+										<a href="mailto:antik-i@yandex.ru">antik-i@yandex.ru</a>
+									</div>
+								</div>
+
+								<div class="whatsapp">
+									<svg class="icon"><use xlink:href="images/sprite.svg#ic_whatsapp"></use></svg>
+									<div><a href="#">+7 905 532-35-63</a></div>
+									<div><a href="#">+7 905 532-35-63</a></div>
+								</div>
+
+								<div class="socials">
+									<a href="/" target="_blank" rel="noopener nofollow" class="instagram_link">
+										<svg class="icon"><use xlink:href="images/sprite.svg#ic_instagram"></use></svg>
+									</a>
+
+									<a href="/" target="_blank" rel="noopener nofollow" class="vkontakte_link">
+										<svg class="icon"><use xlink:href="images/sprite.svg#ic_vkontakte"></use></svg>
+									</a>
+
+									<a href="/" target="_blank" rel="noopener nofollow" class="facebook_link">
+										<svg class="icon"><use xlink:href="images/sprite.svg#ic_facebook"></use></svg>
+									</a>
+								</div>
+							</div>
+
+							<div class="links">
+								<div><a href="/">Политика конфиденциальности</a></div>
+
+								<div class="creator">
+									Разработка сайта — <a href="/" target="_blank" rel="noopener"><span>Точка.ру</span></a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</footer>
+
+			<div class="overlay"></div>
+
+			<div class="buttonUp">
+				<button>
+					<svg class="icon"><use xlink:href="images/sprite.svg#ic_arrow"></use></svg>
+				</button>
+			</div>
+		</div>
+
+
+		<div class="supports_error">
+			Ваш браузер устарел рекомендуем обновить его до последней версии<br> или использовать другой более современный.
+		</div>
+
+
+		<section class="modal" id="callback_modal">
+			<div class="modal_title">Обратный звонок</div>
+
+			<div class="modal_data">
+				<form action="" class="form">
+					<div class="columns row">
+						<div class="line">
+							<div class="field">
+								<input type="text" name="" value="" class="input" placeholder="Ваше имя *">
+								<!-- <input type="text" name="" value="" class="input error" placeholder="Ваше имя *"> -->
+								<!-- <div class="error_text">Это поле необходимо заполнить</div> -->
+							</div>
+						</div>
+
+						<div class="line">
+							<div class="field">
+								<input type="tel" name="" value="" class="input" placeholder="Номер телефона *">
+							</div>
+						</div>
+					</div>
+
+					<div class="line agree">
+						<div class="field">
+							<input type="checkbox" name="agree" id="callback_agree_check" checked>
+							<label for="callback_agree_check">
+								Я соглашаюсь на обработку моих персональных данных и принимаю <a href="/" target="_blank">Политику конфиденциальности</a>
+							</label>
+						</div>
+					</div>
+
+					<div class="submit">
+						<button type="submit" class="submit_btn">ОТПРАВИТЬ</button>
+					</div>
+				</form>
+			</div>
+		</section>
+
+
+		<section class="modal" id="invite_modal">
+			<div class="modal_title">Вызвать дизайнера</div>
+
+			<div class="modal_data">
+				<form action="" class="form">
+					<div class="columns row">
+						<div class="line">
+							<div class="field">
+								<input type="text" name="" value="" class="input" placeholder="Ваше имя *">
+							</div>
+						</div>
+
+						<div class="line">
+							<div class="field">
+								<input type="tel" name="" value="" class="input" placeholder="Номер телефона *">
+							</div>
+						</div>
+					</div>
+
+					<div class="line">
+						<div class="field">
+							<input type="email" name="" value="" class="input" placeholder="E-mail *">
+						</div>
+					</div>
+
+					<div class="line">
+						<div class="field">
+							<textarea name="" placeholder="Комментарий"></textarea>
+						</div>
+					</div>
+
+					<div class="line file">
+						<div class="field">
+							<input type="file" name="file" id="file">
+							<label for="file">
+								<svg class="icon"><use xlink:href="images/sprite.svg#ic_image"></use></svg>
+								<span>ЗАГРУЗИТЬ ФОТО МЕБЕЛИ</span>
+							</label>
+						</div>
+					</div>
+
+					<div class="line agree">
+						<div class="field">
+							<input type="checkbox" name="agree" id="invite_agree_check" checked>
+							<label for="invite_agree_check">
+								Я соглашаюсь на обработку моих персональных данных и принимаю <a href="/" target="_blank">Политику конфиденциальности</a>
+							</label>
+						</div>
+					</div>
+
+					<div class="submit">
+						<button type="submit" class="submit_btn">ОТПРАВИТЬ</button>
+					</div>
+				</form>
+			</div>
+		</section>
+
+
+		<!-- Подключение javascript файлов -->
+		<script src="js/jquery-3.5.0.min.js"></script>
+		<script src="js/lozad.min.js"></script>
+		<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+		<script src="js/inputmask.min.js"></script>
+		<script src="js/nice-select.js"></script>
+		<script src="js/fancybox.min.js"></script>
+		<script src="js/functions.js"></script>
+		<script src="js/scripts.js"></script>
+	</body>
+</html>

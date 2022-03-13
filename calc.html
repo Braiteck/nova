@@ -1,0 +1,787 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+		<!-- Адаптирование страницы для мобильных устройств -->
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+		<!-- Запрет распознования номера телефона -->
+		<meta name="format-detection" content="telephone=no">
+		<meta name="SKYPE_TOOLBAR" content ="SKYPE_TOOLBAR_PARSER_COMPATIBLE">
+
+		<!-- Заголовок страницы -->
+		<title>Заголовок страницы</title>
+
+		<!-- Данное значение часто используют(использовали) поисковые системы -->
+		<meta name="description" content="">
+		<meta name="keywords" content="">
+
+		<!-- Традиционная иконка сайта, размер 16x16, прозрачность поддерживается. Рекомендуемый формат: .ico или .png -->
+		<link rel="shortcut icon" href="favicon.ico">
+
+		<!-- Изменение цвета панели моб. браузера -->
+		<meta name="msapplication-TileColor" content="#f2d07d">
+		<meta name="theme-color" content="#f2d07d">
+
+		<!-- Подключение файлов стилей -->
+		<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+		<link rel="stylesheet" href="css/swiper.css">
+		<link rel="stylesheet" href="css/fancybox.css">
+		<link rel="stylesheet" href="css/styles.css">
+
+		<link rel="stylesheet" href="css/response_1279.css" media="print, (max-width: 1279px)">
+		<link rel="stylesheet" href="css/response_1023.css" media="print, (max-width: 1023px)">
+		<link rel="stylesheet" href="css/response_767.css" media="print, (max-width: 767px)">
+		<link rel="stylesheet" href="css/response_479.css" media="(max-width: 479px)">
+	</head>
+
+	<body>
+		<div class="wrap">
+			<div class="main">
+				<header>
+					<button class="close"></button>
+
+					<div class="mob_scroll">
+						<div class="info">
+							<div class="cont row">
+								<a href="/" class="logo">
+									<img src="images/logo.svg" alt="">
+								</a>
+
+								<div class="contacts">
+									<div>
+										<div class="phone">
+											<svg class="icon"><use xlink:href="images/sprite.svg#ic_phone"></use></svg>
+											<a href="tel:+74957661572">+7 495 766-15-72</a>
+										</div>
+
+										<div class="email">
+											<svg class="icon"><use xlink:href="images/sprite.svg#ic_email"></use></svg>
+											<a href="mailto:antik-i@yandex.ru">antik-i@yandex.ru</a>
+										</div>
+									</div>
+
+									<button class="callback_btn modal_link" data-content="#callback_modal">ПЕРЕЗВОНИТЕ МНЕ</button>
+								</div>
+
+								<div class="whatsapp">
+									<svg class="icon"><use xlink:href="images/sprite.svg#ic_whatsapp"></use></svg>
+									<div><a href="#">+7 905 532-35-63</a></div>
+									<div><a href="#">+7 905 532-35-63</a></div>
+								</div>
+
+								<div class="location">
+									<svg class="icon"><use xlink:href="images/sprite.svg#ic_location"></use></svg>
+									<span>Москва, ул. 1-я Бухвостова дом 12/11,<br> м. Преображенская площадь</span>
+								</div>
+
+								<button class="invite_btn modal_link" data-content="#invite_modal">
+									<svg class="icon"><use xlink:href="images/sprite.svg#ic_measuring"></use></svg>
+									<span>ПРИГЛАСИТЬ<br> ДИЗАЙНЕРА</span>
+								</button>
+
+								<div class="search modal_cont">
+									<button class="btn mini_modal_btn" data-modal-id="#search_modal">
+										<svg class="icon"><use xlink:href="images/sprite.svg#ic_search"></use></svg>
+									</button>
+
+									<div class="mini_modal" id="search_modal">
+										<form action="">
+											<input type="text" name="" value="" class="input" placeholder="Поиск">
+
+											<button type="submit" class="submit_btn">
+												<svg class="icon"><use xlink:href="images/sprite.svg#ic_search"></use></svg>
+											</button>
+
+											<div class="sep"></div>
+
+											<button type="button" class="close"></button>
+										</form>
+									</div>
+								</div>
+							</div>
+						</div>
+
+
+						<div class="bottom">
+							<div class="cont">
+								<nav class="menu row">
+									<div class="item">
+										<a href="/">ПЕРЕТЯЖКА МЯГКОЙ<br> МЕБЕЛИ</a>
+									</div>
+
+									<div class="item">
+										<a href="/">ПЕРЕТЯЖКА КОЖАНОЙ<br> МЕБЕЛИ</a>
+									</div>
+
+									<div class="item">
+										<a href="/" class="sub_link">ОБИВКА<br> И ПЕРЕТЯЖКА</a>
+
+										<div class="sub_menu">
+											<div><a href="/">Обивка и перетяжка стульев</a></div>
+											<div><a href="/">Обивка и перетяжка кресел</a></div>
+											<div><a href="/">Обивка и перетяжка диванов</a></div>
+											<div><a href="/">Обивка и перетяжка кроватей</a></div>
+											<div><a href="/">Обивка и перетяжка офисных кресел</a></div>
+										</div>
+									</div>
+
+									<div class="item">
+										<a href="/">ЗАМЕНА<br> НАПОЛНИТЕЛЯ</a>
+									</div>
+
+									<div class="item">
+										<a href="/">РЕСТАВРАЦИЯ<br> МЕБЕЛИ</a>
+									</div>
+
+									<div class="item">
+										<a href="/">МАТЕРИАЛЫ</a>
+									</div>
+
+									<div class="item">
+										<a class="active">КАЛЬКУЛЯТОР</a>
+									</div>
+
+									<div class="item">
+										<a href="/">ИНФОРМАЦИЯ</a>
+									</div>
+								</nav>
+							</div>
+						</div>
+					</div>
+				</header>
+
+
+				<section class="mob_header">
+					<div class="cont">
+						<a href="/" class="logo">
+							<img src="images/logo.svg" alt="">
+						</a>
+
+						<div class="contacts">
+							<div>
+								<div class="phone">
+									<svg class="icon"><use xlink:href="images/sprite.svg#ic_phone"></use></svg>
+									<a href="tel:+74957661572">+7 495 766-15-72</a>
+								</div>
+
+								<div class="email">
+									<svg class="icon"><use xlink:href="images/sprite.svg#ic_email"></use></svg>
+									<a href="mailto:antik-i@yandex.ru">antik-i@yandex.ru</a>
+								</div>
+							</div>
+
+							<button class="callback_btn modal_link" data-content="#callback_modal">ПЕРЕЗВОНИТЕ МНЕ</button>
+						</div>
+
+						<button class="invite_btn modal_link" data-content="#invite_modal">
+							<svg class="icon"><use xlink:href="images/sprite.svg#ic_measuring"></use></svg>
+							<span>ПРИГЛАСИТЬ<br> ДИЗАЙНЕРА</span>
+						</button>
+
+						<div class="search modal_cont">
+							<button class="btn mini_modal_btn" data-modal-id="#mob_search_modal">
+								<svg class="icon"><use xlink:href="images/sprite.svg#ic_search"></use></svg>
+							</button>
+
+							<div class="mini_modal" id="mob_search_modal">
+								<form action="">
+									<input type="text" name="" value="" class="input" placeholder="Поиск">
+
+									<button type="submit" class="submit_btn">
+										<svg class="icon"><use xlink:href="images/sprite.svg#ic_search"></use></svg>
+									</button>
+
+									<div class="sep"></div>
+
+									<button type="button" class="close"></button>
+								</form>
+							</div>
+						</div>
+
+						<button class="mob_menu_btn">
+							<span></span>
+						</button>
+					</div>
+				</section>
+
+
+				<section class="page_head">
+					<div class="cont">
+						<h1 class="page_title">Цены на перетяжку и обивку мебели</h1>
+					</div>
+				</section>
+
+
+				<section class="calc">
+					<div class="cont">
+						<form action="" class="form">
+							<div class="step step1 active">
+								<div class="block_head center min_margin">
+									<div class="title small">Выберите тип мебели</div>
+								</div>
+
+								<div class="types row">
+									<input type="radio" name="type" id="type_check1">
+									<label for="type_check1">
+										<div class="icon icon1">
+											<svg><use xlink:href="images/sprite.svg#ic_furniture_type1"></use></svg>
+										</div>
+										<div class="name">Диван<br> прямой</div>
+									</label>
+
+									<input type="radio" name="type" id="type_check2">
+									<label for="type_check2">
+										<div class="icon icon2">
+											<svg><use xlink:href="images/sprite.svg#ic_furniture_type2"></use></svg>
+										</div>
+										<div class="name">Диван<br> угловой</div>
+									</label>
+
+									<input type="radio" name="type" id="type_check3">
+									<label for="type_check3">
+										<div class="icon icon3">
+											<svg><use xlink:href="images/sprite.svg#ic_furniture_type3"></use></svg>
+										</div>
+										<div class="name">Кухонный<br> уголок</div>
+									</label>
+
+									<input type="radio" name="type" id="type_check4">
+									<label for="type_check4">
+										<div class="icon icon4">
+											<svg><use xlink:href="images/sprite.svg#ic_furniture_type4"></use></svg>
+										</div>
+										<div class="name">Кресло</div>
+									</label>
+
+									<input type="radio" name="type" id="type_check5">
+									<label for="type_check5">
+										<div class="icon icon5">
+											<svg><use xlink:href="images/sprite.svg#ic_furniture_type5"></use></svg>
+										</div>
+										<div class="name">Стул с мягкой<br> спинкой</div>
+									</label>
+
+									<input type="radio" name="type" id="type_check6">
+									<label for="type_check6">
+										<div class="icon icon6">
+											<svg><use xlink:href="images/sprite.svg#ic_furniture_type6"></use></svg>
+										</div>
+										<div class="name">Стул без мягкой<br> спинки</div>
+									</label>
+
+									<input type="radio" name="type" id="type_check7">
+									<label for="type_check7">
+										<div class="icon icon7">
+											<svg><use xlink:href="images/sprite.svg#ic_furniture_type7"></use></svg>
+										</div>
+										<div class="name">Кровать</div>
+									</label>
+								</div>
+							</div>
+
+
+							<div class="step step2">
+								<div class="block_head center min_margin">
+									<div class="title small">Выберите размер мебели</div>
+								</div>
+
+								<div class="sizes row">
+									<input type="radio" name="size" id="size_check1" data-price="0">
+									<label for="size_check1">Малый 2-х местный</label>
+
+									<input type="radio" name="size" id="size_check2" data-price="1000">
+									<label for="size_check2">Средний 3-х местный</label>
+
+									<input type="radio" name="size" id="size_check3" data-price="2000">
+									<label for="size_check3">Большой 4-х местный и более</label>
+								</div>
+							</div>
+
+
+							<div class="step step3">
+								<div class="block_head center min_margin">
+									<div class="title small">Выберите материал</div>
+								</div>
+
+								<div class="materials row">
+									<input type="radio" name="material" id="material_check1" data-price="1000">
+									<label for="material_check1" class="material">
+										<div class="thumb">
+											<img data-src="images/tmp/material_thumb14.jpg" alt="" class="lozad">
+										</div>
+										<div class="name">Ткани</div>
+									</label>
+
+									<input type="radio" name="material" id="material_check2" data-price="2000">
+									<label for="material_check2" class="material">
+										<div class="thumb">
+											<img data-src="images/tmp/material_thumb11.jpg" alt="" class="lozad">
+										</div>
+										<div class="name">Натуральная кожа</div>
+									</label>
+
+									<input type="radio" name="material" id="material_check3" data-price="3000">
+									<label for="material_check3" class="material">
+										<div class="thumb">
+											<img data-src="images/tmp/material_thumb12.jpg" alt="" class="lozad">
+										</div>
+										<div class="name">Экокожа</div>
+									</label>
+								</div>
+							</div>
+
+
+							<div class="step step4">
+								<div class="block_head center min_margin">
+									<div class="title small">Выберите детали</div>
+								</div>
+
+								<div class="details row">
+									<input type="radio" name="detail" id="detail_check1" data-price="0">
+									<label for="detail_check1">
+										<div class="thumb">
+											<img data-src="images/tmp/detail_thumb1.jpg" alt="" class="lozad">
+										</div>
+										<div class="name">Без деталей</div>
+									</label>
+
+									<input type="radio" name="detail" id="detail_check2" data-price="1000">
+									<label for="detail_check21">
+										<div class="thumb">
+											<img data-src="images/tmp/detail_thumb2.jpg" alt="" class="lozad">
+										</div>
+										<div class="name">Отстрочка</div>
+									</label>
+
+									<input type="radio" name="detail" id="detail_check3" data-price="1500">
+									<label for="detail_check3">
+										<div class="thumb">
+											<img data-src="images/tmp/detail_thumb3.jpg" alt="" class="lozad">
+										</div>
+										<div class="name">Декоративный кант</div>
+									</label>
+
+									<input type="radio" name="detail" id="detail_check4" data-price="1000">
+									<label for="detail_check4">
+										<div class="thumb">
+											<img data-src="images/tmp/detail_thumb4.jpg" alt="" class="lozad">
+										</div>
+										<div class="name">Сборки</div>
+									</label>
+
+									<input type="radio" name="detail" id="detail_check5" data-price="2000">
+									<label for="detail_check5">
+										<div class="thumb">
+											<img data-src="images/tmp/detail_thumb5.jpg" alt="" class="lozad">
+										</div>
+										<div class="name">Каретная стяжка</div>
+									</label>
+
+									<input type="radio" name="detail" id="detail_check6" data-price="1200">
+									<label for="detail_check6">
+										<div class="thumb">
+											<img data-src="images/tmp/detail_thumb6.jpg" alt="" class="lozad">
+										</div>
+										<div class="name">Тесьма</div>
+									</label>
+
+									<input type="radio" name="detail" id="detail_check7" data-price="100">
+									<label for="detail_check7">
+										<div class="thumb">
+											<img data-src="images/tmp/detail_thumb7.jpg" alt="" class="lozad">
+										</div>
+										<div class="name">Мебельные пуговицы</div>
+									</label>
+
+									<input type="radio" name="detail" id="detail_check8" data-price="1000">
+									<label for="detail_check8">
+										<div class="thumb">
+											<img data-src="images/tmp/detail_thumb8.jpg" alt="" class="lozad">
+										</div>
+										<div class="name">Утяжки</div>
+									</label>
+
+									<input type="radio" name="detail" id="detail_check9" data-price="2000">
+									<label for="detail_check9">
+										<div class="thumb">
+											<img data-src="images/tmp/detail_thumb9.jpg" alt="" class="lozad">
+										</div>
+										<div class="name">Гвоздики</div>
+									</label>
+								</div>
+							</div>
+
+
+							<div class="step step5">
+								<div class="block_head center min_margin">
+									<div class="title small">Выберите тариф</div>
+								</div>
+
+								<div class="tariffs row">
+									<input type="radio" name="tariff" id="tariff_check1">
+									<label for="tariff_check1" class="tariff tariff1">
+										<div class="name">Стандартный</div>
+
+										<div class="features">
+											<div>Замена обивки <small>(частичная)</small></div>
+										</div>
+
+										<div class="price" data-price="5000">от <span>8 550</span> руб.</div>
+
+										<button class="invite_btn invite_modal_link" data-content="#calc_invite_modal">
+											<svg class="icon"><use xlink:href="images/sprite.svg#ic_measuring"></use></svg>
+											<span>ПРИГЛАСИТЬ<br> ДИЗАЙНЕРА</span>
+										</button>
+									</label>
+
+
+									<input type="radio" name="tariff" id="tariff_check2">
+									<label for="tariff_check2" class="tariff tariff2">
+										<div class="name">Оптимальный</div>
+
+										<div class="features">
+											<div>Замена обивки <small>(частичная)</small></div>
+											<div>Замена наполнителя <small>(частичная, при необходимости)</small></div>
+											<div>Ремонт каркаса <small>(базовый)</small></div>
+											<div>Подушка в подарок!</div>
+										</div>
+
+										<div class="price" data-price="10000">от <span>14 900</span> руб.</div>
+
+										<button class="invite_btn invite_modal_link" data-content="#calc_invite_modal">
+											<svg class="icon"><use xlink:href="images/sprite.svg#ic_measuring"></use></svg>
+											<span>ПРИГЛАСИТЬ<br> ДИЗАЙНЕРА</span>
+										</button>
+									</label>
+
+
+									<input type="radio" name="tariff" id="tariff_check3">
+									<label for="tariff_check3" class="tariff tariff3">
+										<div class="name">Премиум</div>
+
+										<div class="features">
+											<div>Замена обивки <small>(частичная)</small></div>
+											<div>Замена наполнителя <small>(частичная, при необходимости)</small></div>
+											<div>Ремонт каркаса <small>(базовый)</small></div>
+											<div>Реставрационные работы деревянной части <small>(при необходимости)</small></div>
+											<div>Доставка по Москве и области</div>
+											<div>Подушка в подарок!</div>
+										</div>
+
+										<div class="price" data-price="15000">от <span>28 000</span> руб.</div>
+
+										<button class="invite_btn invite_modal_link" data-content="#calc_invite_modal">
+											<svg class="icon"><use xlink:href="images/sprite.svg#ic_measuring"></use></svg>
+											<span>ПРИГЛАСИТЬ<br> ДИЗАЙНЕРА</span>
+										</button>
+									</label>
+								</div>
+							</div>
+
+
+							<div class="warning">
+								<div class="icon">
+									<img data-src="images/ic_warning.svg" alt="" class="lozad">
+								</div>
+
+								<div class="title">Обращаем ваше внимание</div>
+
+								<div class="desc">Данный расчет является приблизительным. Конечная сумма работ может отличаться от ориентировочной стоимости и определяется нашим мастером на месте при осмотре мебели.</div>
+							</div>
+						</form>
+					</div>
+				</section>
+
+
+				<section class="delivery_info">
+					<div class="cont">
+						<div class="info">
+							<div class="title">Стоимость доставки</div>
+
+							<div class="text_block">
+								<p>Доставка может осуществляться по запросу: в один конец или до цеха и обратно. Стоимость доставки в один конец <b>1 500 руб. + 400 руб.</b> за каждые 10 км от МКАД.</p>
+
+								<p>В случае, если мебель является негабаритной, или по адресу доставки отсутствует лифт, стоимость доставки рассчитывается индивидуально.</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="bg lozad" data-background-image="images/bg_delivery_info.jpg"></div>
+				</section>
+			</div>
+
+
+			<footer>
+				<div class="info">
+					<div class="cont row">
+						<div class="col_left">
+							<div class="links">
+								<div class="title">УСЛУГИ</div>
+
+								<div class="list">
+									<div><a href="/">Перетяжка мягкой мебели</a></div>
+									<div><a href="/">Перетяжка кожаной мебели</a></div>
+									<div><a href="/">Обивка и перетяжка стульев</a></div>
+									<div><a href="/">Обивка и перетяжка кресел</a></div>
+									<div><a href="/">Обивка и перетяжка диванов</a></div>
+									<div><a href="/">Обивка и перетяжка кроватей</a></div>
+									<div><a href="/">Обивка и перетяжка офисных кресел</a></div>
+									<div><a href="/">Замена наполнителя</a></div>
+									<div><a href="/">Реставрация мебели</a></div>
+								</div>
+							</div>
+
+							<div class="links">
+								<div class="list">
+									<div><a href="/" class="big">МАТЕРИАЛЫ</a></div>
+									<div><a href="/" class="big">НАШИ РАБОТЫ</a></div>
+									<div><a href="/" class="big">КАЛЬКУЛЯТОР</a></div>
+									<div><a href="/" class="big">ИНФОРМАЦИЯ</a></div>
+									<div><a href="/">О фабрике</a></div>
+									<div><a href="/">Новости</a></div>
+								</div>
+							</div>
+						</div>
+
+						<div class="logo">
+							<img src="images/footer_logo.png" alt="">
+						</div>
+
+						<div class="col_right">
+							<div class="contacts">
+								<div class="location">
+									<svg class="icon"><use xlink:href="images/sprite.svg#ic_location"></use></svg>
+									<span>Москва, ул. 1-я Бухвостова дом 12/11, м. Преображенская площадь</span>
+								</div>
+
+								<div>
+									<div class="phone">
+										<svg class="icon"><use xlink:href="images/sprite.svg#ic_phone"></use></svg>
+										<a href="tel:+74957661572">+7 495 766-15-72</a>
+									</div>
+
+									<div class="email">
+										<svg class="icon"><use xlink:href="images/sprite.svg#ic_email"></use></svg>
+										<a href="mailto:antik-i@yandex.ru">antik-i@yandex.ru</a>
+									</div>
+								</div>
+
+								<div class="whatsapp">
+									<svg class="icon"><use xlink:href="images/sprite.svg#ic_whatsapp"></use></svg>
+									<div><a href="#">+7 905 532-35-63</a></div>
+									<div><a href="#">+7 905 532-35-63</a></div>
+								</div>
+
+								<div class="socials">
+									<a href="/" target="_blank" rel="noopener nofollow" class="instagram_link">
+										<svg class="icon"><use xlink:href="images/sprite.svg#ic_instagram"></use></svg>
+									</a>
+
+									<a href="/" target="_blank" rel="noopener nofollow" class="vkontakte_link">
+										<svg class="icon"><use xlink:href="images/sprite.svg#ic_vkontakte"></use></svg>
+									</a>
+
+									<a href="/" target="_blank" rel="noopener nofollow" class="facebook_link">
+										<svg class="icon"><use xlink:href="images/sprite.svg#ic_facebook"></use></svg>
+									</a>
+								</div>
+							</div>
+
+							<div class="links">
+								<div><a href="/">Политика конфиденциальности</a></div>
+
+								<div class="creator">
+									Разработка сайта — <a href="/" target="_blank" rel="noopener"><span>Точка.ру</span></a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</footer>
+
+			<div class="overlay"></div>
+
+			<div class="buttonUp">
+				<button>
+					<svg class="icon"><use xlink:href="images/sprite.svg#ic_arrow"></use></svg>
+				</button>
+			</div>
+		</div>
+
+
+		<div class="supports_error">
+			Ваш браузер устарел рекомендуем обновить его до последней версии<br> или использовать другой более современный.
+		</div>
+
+
+		<section class="modal" id="callback_modal">
+			<div class="modal_title">Обратный звонок</div>
+
+			<div class="modal_data">
+				<form action="" class="form">
+					<div class="columns row">
+						<div class="line">
+							<div class="field">
+								<input type="text" name="" value="" class="input" placeholder="Ваше имя *">
+								<!-- <input type="text" name="" value="" class="input error" placeholder="Ваше имя *"> -->
+								<!-- <div class="error_text">Это поле необходимо заполнить</div> -->
+							</div>
+						</div>
+
+						<div class="line">
+							<div class="field">
+								<input type="tel" name="" value="" class="input" placeholder="Номер телефона *">
+							</div>
+						</div>
+					</div>
+
+					<div class="line agree">
+						<div class="field">
+							<input type="checkbox" name="agree" id="callback_agree_check" checked>
+							<label for="callback_agree_check">
+								Я соглашаюсь на обработку моих персональных данных и принимаю <a href="/" target="_blank">Политику конфиденциальности</a>
+							</label>
+						</div>
+					</div>
+
+					<div class="submit">
+						<button type="submit" class="submit_btn">ОТПРАВИТЬ</button>
+					</div>
+				</form>
+			</div>
+		</section>
+
+
+		<section class="modal" id="invite_modal">
+			<div class="modal_title">Вызвать дизайнера</div>
+
+			<div class="modal_data">
+				<form action="" class="form">
+					<div class="columns row">
+						<div class="line">
+							<div class="field">
+								<input type="text" name="" value="" class="input" placeholder="Ваше имя *">
+							</div>
+						</div>
+
+						<div class="line">
+							<div class="field">
+								<input type="tel" name="" value="" class="input" placeholder="Номер телефона *">
+							</div>
+						</div>
+					</div>
+
+					<div class="line">
+						<div class="field">
+							<input type="email" name="" value="" class="input" placeholder="E-mail *">
+						</div>
+					</div>
+
+					<div class="line">
+						<div class="field">
+							<textarea name="" placeholder="Комментарий"></textarea>
+						</div>
+					</div>
+
+					<div class="line file">
+						<div class="field">
+							<input type="file" name="file" id="file">
+							<label for="file">
+								<svg class="icon"><use xlink:href="images/sprite.svg#ic_image"></use></svg>
+								<span>ЗАГРУЗИТЬ ФОТО МЕБЕЛИ</span>
+							</label>
+						</div>
+					</div>
+
+					<div class="line agree">
+						<div class="field">
+							<input type="checkbox" name="agree" id="invite_agree_check" checked>
+							<label for="invite_agree_check">
+								Я соглашаюсь на обработку моих персональных данных и принимаю <a href="/" target="_blank">Политику конфиденциальности</a>
+							</label>
+						</div>
+					</div>
+
+					<div class="submit">
+						<button type="submit" class="submit_btn">ОТПРАВИТЬ</button>
+					</div>
+				</form>
+			</div>
+		</section>
+
+
+		<section class="modal" id="calc_invite_modal">
+			<div class="modal_title">Вызвать дизайнера</div>
+
+			<div class="modal_data">
+				<form action="" class="form">
+					<div class="columns row">
+						<div class="line">
+							<div class="field">
+								<input type="text" name="" value="" class="input" placeholder="Ваше имя *">
+							</div>
+						</div>
+
+						<div class="line">
+							<div class="field">
+								<input type="tel" name="" value="" class="input" placeholder="Номер телефона *">
+							</div>
+						</div>
+					</div>
+
+					<div class="line">
+						<div class="field">
+							<input type="email" name="" value="" class="input" placeholder="E-mail *">
+						</div>
+					</div>
+
+					<div class="line">
+						<div class="field">
+							<textarea name="" placeholder="Комментарий"></textarea>
+						</div>
+					</div>
+
+					<div class="line file">
+						<div class="field">
+							<input type="file" name="file" id="file">
+							<label for="file">
+								<svg class="icon"><use xlink:href="images/sprite.svg#ic_image"></use></svg>
+								<span>ЗАГРУЗИТЬ ФОТО МЕБЕЛИ</span>
+							</label>
+						</div>
+					</div>
+
+					<div class="line calc_info">
+						<div class="title">Предварительный расчет</div>
+					</div>
+
+					<div class="line agree">
+						<div class="field">
+							<input type="checkbox" name="agree" id="invite_agree_check" checked>
+							<label for="invite_agree_check">
+								Я соглашаюсь на обработку моих персональных данных и принимаю <a href="/" target="_blank">Политику конфиденциальности</a>
+							</label>
+						</div>
+					</div>
+
+					<div class="submit">
+						<button type="submit" class="submit_btn">ОТПРАВИТЬ</button>
+					</div>
+				</form>
+			</div>
+		</section>
+
+
+		<!-- Подключение javascript файлов -->
+		<script src="js/jquery-3.5.0.min.js"></script>
+		<script src="js/lozad.min.js"></script>
+		<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+		<script src="js/inputmask.min.js"></script>
+		<script src="js/nice-select.js"></script>
+		<script src="js/fancybox.min.js"></script>
+		<script src="js/functions.js"></script>
+		<script src="js/scripts.js"></script>
+	</body>
+</html>
