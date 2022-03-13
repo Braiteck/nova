@@ -951,6 +951,27 @@
 
 
 
+    /*--------------------
+        Sub categories
+    --------------------*/
+    .sub_categories
+    {
+        padding-top: 70px;
+    }
+
+
+    .sub_categories .link
+    {
+        min-width: 120px;
+    }
+
+    .sub_categories .link span
+    {
+        padding: 7px 15px;
+    }
+
+
+
     /*------------
         Footer
     ------------*/

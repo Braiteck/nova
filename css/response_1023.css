@@ -1061,6 +1061,62 @@
 
 
 
+    /*--------------------
+        Sub categories
+    --------------------*/
+    .sub_categories
+    {
+        padding-top: 60px;
+    }
+
+
+    .sub_categories .row
+    {
+        display: block;
+        overflow: auto;
+
+        width: calc(100% + 48px);
+        margin: -12px -24px 0;
+        padding: 0 24px;
+
+        text-align: center;
+        white-space: nowrap;
+
+        scrollbar-color: transparent transparent !important;
+        scrollbar-width: thin !important;
+    }
+
+    .sub_categories .row::-webkit-scrollbar
+    {
+        width: 0 !important;
+        height: 0 !important;
+
+        background-color: transparent !important;
+    }
+
+    .sub_categories .row::-webkit-scrollbar-thumb
+    {
+        background-color: transparent !important;
+    }
+
+
+    .sub_categories .row > *
+    {
+        display: inline-block;
+
+        max-width: none;
+        margin: 0;
+
+        vertical-align: top;
+    }
+
+    .sub_categories .row > * + *
+    {
+        margin-left: 16px;
+    }
+
+
+
     /*------------
         Footer
     ------------*/

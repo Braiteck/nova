@@ -6304,6 +6304,80 @@ header .menu .sub_menu a.active
 
 
 
+/*--------------------
+    Sub categories
+--------------------*/
+.sub_categories
+{
+    padding-top: 75px;
+}
+
+
+.sub_categories .row
+{
+    margin-top: -20px;
+    margin-bottom: -20px;
+    margin-left: -20px;
+
+    align-items: stretch;
+    align-content: stretch;
+    justify-content: center;
+}
+
+.sub_categories .row > *
+{
+    margin-bottom: 20px;
+    margin-left: 20px;
+}
+
+
+.sub_categories .link
+{
+    color: #4d3406;
+    line-height: 17px;
+
+    display: block;
+
+    min-width: 140px;
+    padding: 3px;
+
+    transition: .2s linear;
+    text-align: center;
+    text-decoration: none;
+
+    border-radius: 2px;
+    background: #f2ce88;
+}
+
+.sub_categories .link span
+{
+    display: block;
+
+    padding: 10px 23px;
+
+    transition: border-color .2s linear;
+
+    border: 1px dashed #bc9542;
+    border-radius: inherit;
+}
+
+
+.sub_categories .link:hover,
+.sub_categories .link.active
+{
+    color: #f2ce88;
+
+    background: #303134;
+}
+
+.sub_categories .link:hover span,
+.sub_categories .link.active span
+{
+    border-color: transparent;
+}
+
+
+
 /*------------
     Footer
 ------------*/
